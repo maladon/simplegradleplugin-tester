@@ -1,0 +1,8 @@
+apply plugin: 'groovy'
+//apply plugin: 'simplegradleplugin'
+
+dependencies {
+    compile gradleApi()
+    compile(project(':buildSrc'))
+    groovy localGroovy()
+}
